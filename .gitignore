@@ -18,6 +18,7 @@
 **/id_ed25519
 **/.npmrc
 **/.netrc
+**/.ssh/
 
 # Node / deps / logs
 node_modules/
@@ -37,7 +38,24 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+.pytest_cache/
+.venv/
+venv/
 
-# OpenClaw / temp
+# OpenClaw / local state
+.openclaw/
+.clawhub/
+**/.clawhub/
+
+# Temp / caches
 *.tmp
+*.swp
+*.swo
 /tmp/
+.cache/
+
+# Optional personal memory / bootstrap artifacts
+BOOT.md
+BOOTSTRAP.md
+MEMORY.md
+memory/
